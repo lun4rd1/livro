@@ -58,13 +58,15 @@ public class Main {
 
                     listaLivro.add(novoLivro);
 
+                    metodoLivro.CadastrarLivro(novoLivro);
+
                     System.out.println("Cadastro realizado com suceso: ");
 
                     break;
 
                 case "2":
 
-                    if (listaLivro.size() > 0) {
+                    if (metodoLivro.listaLivro().size() > 0) {
 
                         for (livro cadalivro : listaLivro) {
                             System.out.println("Titulo: " + cadalivro.titulo);
